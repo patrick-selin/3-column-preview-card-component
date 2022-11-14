@@ -1,12 +1,18 @@
 :root {
     /* primary colors */
-    --main-bg-color: hsl(233, 47%, 7%);
-    --color1: hsl(244, 38%, 16%);
-    --color2: hsl(277, 64%, 61%);
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
 
     /* neutral colors */
-    --white: hsl(0, 0%, 100%) --p--main-text:hsla(0, 0%, 100%, 0.75);
-    --color3: hsla(0, 0%, 100%, 0.6);
+    --white: hsl(0, 0%, 100%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
+
+    /* Fonts */
+    --p: 'Lexend Deca', sans-serif;
+    
+    --h2: 'Big Shoulders Display', cursive;
 }
 
 *,
@@ -23,11 +29,18 @@ body {
     height: 100vh;
 }
 
-
 body {
-    line-height: 1.5;
+    line-height: 1.7;
     -webkit-font-smoothing: antialiased;
-    background-color: thistle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    font-family: var(--p);
+    font-weight: 400;
+    color: var(--transparent-white)
+
+    
 }
 
 img,
@@ -52,4 +65,64 @@ h4,
 h5,
 h6 {
     overflow-wrap: break-word;
+}
+
+h2 {
+    /* font-family: 'Big Shoulders Display', cursive; */
+
+    font-family: var(--h2);
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--white);
+}
+
+a {
+    text-decoration: none;
+    color:
+}
+
+.container {
+    max-width: 58rem;
+    
+    display: flex;
+}
+
+
+
+.card {
+    padding: 3rem;
+    border-radius: 0.4rem;
+    height: 500px;
+    
+}
+
+.card > * {
+
+  
+}
+
+.card-1 {
+    background-color: var(--bright-orange);
+}
+
+.card-2 {
+    background-color: var(--dark-cyan);
+}
+
+.card-3 {
+    background-color: var(--very-dark-cyan);
+}
+
+
+.button {
+    font: inherit;
+    display: inline-block;
+    width: 9rem;
+    text-align: center;
+    background-color: var(--white);
+    color: var(--very-dark-cyan);
+    border-radius: 2rem;
+    padding: 0.8rem 2rem;
+    vertical-align: bottom;
+    outline: none;
 }
