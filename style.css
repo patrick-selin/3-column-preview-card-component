@@ -29,6 +29,7 @@ body {
 }
 
 body {
+    background-color: --very-light-gray;
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
   display: flex;
@@ -82,12 +83,13 @@ a {
 .container {
   max-width: 58rem;
   display: flex;
+  background-color: var(--bright-orange);
 }
 
 .card {
   padding: 3rem;
   border-radius: 0.4rem;
-  /* height: 500px; */
+  
   display: flex;
   flex-direction: column;
   
@@ -136,21 +138,37 @@ a {
   background-color: transparent;
 }
 
-
 @media only screen and (max-width: 860px) {
     body {
-        /* display: flex; */
         height: 100%;
-  /* align-items: center; */
-  /* justify-content: center; */
+        width: 100%;
+        margin-top: 10px;
+        display: flex;
+        align-items: flex-start;
+        margin: 0;
+        padding: 0;
+        
     }
     .container {
         display: flex;
         flex-direction: column;
-        
+        display: block;
+  border-collapse: separate;
+  overflow: hidden;
+  
     }
-
     .card {
         max-width: 19.5rem;
+        
+        
     }
+    .card > .button {
+        margin-top: 0.5rem;
+    }
+
+}
+
+.container:first-child{
+    border-radius: 0.6rem;
+    
 }
