@@ -5,7 +5,7 @@
 
 ### Screenshot
 
-![solution](https://phot.png)
+![solution](https://github.com/patrick-selin/3-column-preview-card-component/blob/main/images/3-column%20preview%20card%20component-solution.png)
 
 
 ### Links
